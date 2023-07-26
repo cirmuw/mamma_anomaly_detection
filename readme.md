@@ -23,8 +23,7 @@ If you use (parts of) this code in your work please refer to this citations:
 - `wgangp_64x64.py`: Training a 64x64 WGAN architecture yields a trained generator (G) and discriminator (D). Modifies and extends (including `tflib/`) Ishaan Gulrajani's Tensorflow implementation of the WGAN-GP model proposed in ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) ([GitHub](https://github.com/igul222/improved_wgan_training)).
 - `z_encoding_izif.py`: Training the **izi_f** encoder (E) based on the trained WGAN model (G and D). Please refer to the full paper for more detailed information.
 - `new_anomaly_detection.py`: Code for anomaly scoring utilizing the trained G, D, and E.
-- `z_encoding_d`: Contains trained f-AnoGan
-- `wganTain`: Contains the trained Wasserstein-GAN (without encoder) 
+
 
 ## Setting (image) paths
 
