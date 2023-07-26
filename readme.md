@@ -1,7 +1,7 @@
 f-AnoGAN for prediction of anomalies in high-risk breast cancer women
 ===================================================================
 
-![Overview](Figure1.jpeg)
+![Overview](Figure1.jpg)
 
 Code for reproducing **f-AnoGAN** training and anomaly scoring presented in [*"Deep learning for predicting future lesion emergence in high-risk breast MRI screening: a feasibility study"*](https://eurradiolexp.springeropen.com/articles/10.1186/s41747-023-00343-y). This work extends **f-AnoGAN**: [*"f-AnoGAN: Fast Unsupervised Anomaly Detection with Generative Adversarial Networks"*](https://www.sciencedirect.com/science/article/abs/pii/S1361841518302640) ([accepted manuscript](https://github.com/tSchlegl/f-AnoGAN/blob/master/paper/f-AnoGAN.pdf)) for the application to dce-MRI in high-risk breast cancer women.
 
