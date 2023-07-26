@@ -1,0 +1,153 @@
+
+The following have been reloaded with a version change:
+  1) GCC/4.7.2 => GCC/4.9.3
+
+2020-10-02 13:18:04.487403: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2020-10-02 13:18:04.487472: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2020-10-02 13:18:05.506544: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-10-02 13:18:05.507406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti
+major: 7 minor: 5 memoryClockRate (GHz) 1.755
+pciBusID 0000:08:00.0
+Total memory: 10.73GiB
+Free memory: 10.57GiB
+2020-10-02 13:18:05.507435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2020-10-02 13:18:05.507449: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2020-10-02 13:18:05.507472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:08:00.0)
+  0%|          | 0/7 [00:00<?, ?it/s]2020-10-02 13:20:18.212030: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3183 get requests, put_count=3183 evicted_count=1000 eviction_rate=0.314169 and unsatisfied allocation rate=0.345586
+2020-10-02 13:20:18.212709: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+ 14%|█▍        | 1/7 [39:24<3:56:29, 2364.99s/it] 29%|██▊       | 2/7 [1:17:03<3:14:25, 2333.16s/it] 43%|████▎     | 3/7 [1:54:41<2:34:02, 2310.63s/it] 57%|█████▋    | 4/7 [2:32:20<1:54:44, 2294.99s/it] 71%|███████▏  | 5/7 [3:10:07<1:16:13, 2286.68s/it] 86%|████████▌ | 6/7 [3:47:50<37:59, 2279.39s/it]  100%|██████████| 7/7 [4:25:34<00:00, 2274.81s/it]100%|██████████| 7/7 [4:25:34<00:00, 2276.32s/it]
+[92m
+=== WGAN-GP TRAINING PARAMETERS ===[0m
+Uppercase local vars:
+	BATCH_SIZE: 64
+	CRITIC_ITERS: 5
+	DIM: 64
+	LAMBDA: 10
+	MODE: wgan-gp
+	N_GPUS: 1
+	OUTPUT_DIM: 4096
+	RAND_SAMPLING: normal
+	TRAIN_EPOCHS: 7
+	ZDIM: 128
+	ZSPACE_SMPL_NRIMG: 5
+	ZSPACE_SMPL_PTS: 13
+
+
+DEVICES: ['/gpu:0']
+
+
+ [*] Reading checkpoints...
+iter 5	
+[92m	Saw real samples of 0 full epochs and        320 additinal samples .. (0.002% of epoch done!)[0m
+iter 500	train disc cost	-9.98173332214	train gen cost	6.56402587891	time	4.3965896368
+[92m	Saw real samples of 0 full epochs and      32000 additinal samples .. (0.176% of epoch done!)[0m
+iter 1000	train disc cost	-4.83771562576	train gen cost	-42.8782997131	time	4.12225008011
+[92m	Saw real samples of 0 full epochs and      64000 additinal samples .. (0.352% of epoch done!)[0m
+iter 1500	train disc cost	-3.22554707527	train gen cost	-34.2184562683	time	3.98859500885
+[92m	Saw real samples of 0 full epochs and      96000 additinal samples .. (0.528% of epoch done!)[0m
+iter 2000	train disc cost	-4.78676605225	train gen cost	-35.9996948242	time	3.94616818428
+[92m	Saw real samples of 0 full epochs and     128000 additinal samples .. (0.704% of epoch done!)[0m
+iter 2500	train disc cost	-3.23011660576	train gen cost	-34.0114212036	time	3.96782398224
+[92m	Saw real samples of 0 full epochs and     160000 additinal samples .. (0.881% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 1) ...
+iter 3000	train disc cost	-1.53813934326	train gen cost	-12.9738731384	time	3.93700909615
+[92m	Saw real samples of 1 full epochs and       2122 additinal samples .. (0.012% of epoch done!)[0m
+iter 3500	train disc cost	-2.5036649704	train gen cost	-12.869348526	time	3.98990011215
+[92m	Saw real samples of 1 full epochs and        114 additinal samples .. (0.001% of epoch done!)[0m
+iter 4000	train disc cost	-1.94778299332	train gen cost	-8.45261287689	time	3.93222498894
+[92m	Saw real samples of 1 full epochs and        940 additinal samples .. (0.005% of epoch done!)[0m
+iter 4500	train disc cost	-1.07388353348	train gen cost	-7.67857837677	time	3.97578692436
+[92m	Saw real samples of 1 full epochs and       1766 additinal samples .. (0.010% of epoch done!)[0m
+iter 5000	train disc cost	-2.72435855865	train gen cost	-2.42259740829	time	3.96010804176
+[92m	Saw real samples of 1 full epochs and       2592 additinal samples .. (0.014% of epoch done!)[0m
+iter 5500	train disc cost	-1.87422347069	train gen cost	6.0128068924	time	3.92739295959
+[92m	Saw real samples of 1 full epochs and        584 additinal samples .. (0.003% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 2) ...
+iter 6000	train disc cost	-1.22838437557	train gen cost	20.6717643738	time	3.93788099289
+[92m	Saw real samples of 2 full epochs and       4244 additinal samples .. (0.023% of epoch done!)[0m
+iter 6500	train disc cost	-0.915377557278	train gen cost	24.2992935181	time	3.94431900978
+[92m	Saw real samples of 2 full epochs and       2236 additinal samples .. (0.012% of epoch done!)[0m
+iter 7000	train disc cost	-0.982574105263	train gen cost	30.2185630798	time	3.95267701149
+[92m	Saw real samples of 2 full epochs and        228 additinal samples .. (0.001% of epoch done!)[0m
+iter 7500	train disc cost	-0.819598376751	train gen cost	32.6727676392	time	3.99514889717
+[92m	Saw real samples of 2 full epochs and       3888 additinal samples .. (0.021% of epoch done!)[0m
+iter 8000	train disc cost	-1.37048494816	train gen cost	37.3176651001	time	3.94559597969
+[92m	Saw real samples of 2 full epochs and       1880 additinal samples .. (0.010% of epoch done!)[0m
+iter 8500	train disc cost	-0.790289819241	train gen cost	37.6370849609	time	3.99451708794
+[92m	Saw real samples of 2 full epochs and       5540 additinal samples .. (0.030% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 3) ...
+iter 9000	train disc cost	-1.36512315273	train gen cost	37.226940155	time	3.95559000969
+[92m	Saw real samples of 3 full epochs and       6366 additinal samples .. (0.035% of epoch done!)[0m
+iter 9500	train disc cost	-0.9867862463	train gen cost	35.4558105469	time	3.94588398933
+[92m	Saw real samples of 3 full epochs and       4358 additinal samples .. (0.024% of epoch done!)[0m
+iter 10000	train disc cost	-0.0415750741959	train gen cost	29.5740909576	time	3.95732283592
+[92m	Saw real samples of 3 full epochs and       2350 additinal samples .. (0.013% of epoch done!)[0m
+iter 10500	train disc cost	-0.761152625084	train gen cost	28.4194602966	time	3.97092604637
+[92m	Saw real samples of 3 full epochs and        342 additinal samples .. (0.002% of epoch done!)[0m
+iter 11000	train disc cost	-1.74865806103	train gen cost	34.4263916016	time	3.94736599922
+[92m	Saw real samples of 3 full epochs and       6836 additinal samples .. (0.038% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 4) ...
+iter 11500	train disc cost	-1.53465139866	train gen cost	27.1120471954	time	4.19172811508
+[92m	Saw real samples of 4 full epochs and      10496 additinal samples .. (0.058% of epoch done!)[0m
+iter 12000	train disc cost	-0.700428903103	train gen cost	28.4738807678	time	3.95091509819
+[92m	Saw real samples of 4 full epochs and       8488 additinal samples .. (0.047% of epoch done!)[0m
+iter 12500	train disc cost	-0.998380064964	train gen cost	26.5779800415	time	3.94548487663
+[92m	Saw real samples of 4 full epochs and       6480 additinal samples .. (0.036% of epoch done!)[0m
+iter 13000	train disc cost	-0.802984833717	train gen cost	21.6847419739	time	3.99402093887
+[92m	Saw real samples of 4 full epochs and       4472 additinal samples .. (0.025% of epoch done!)[0m
+iter 13500	train disc cost	-0.371926903725	train gen cost	18.8033218384	time	3.98378014565
+[92m	Saw real samples of 4 full epochs and       2464 additinal samples .. (0.014% of epoch done!)[0m
+iter 14000	train disc cost	-0.628629684448	train gen cost	16.204492569	time	3.96392297745
+[92m	Saw real samples of 4 full epochs and        456 additinal samples .. (0.003% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 5) ...
+iter 14500	train disc cost	-1.04030930996	train gen cost	17.3212432861	time	3.9363489151
+[92m	Saw real samples of 5 full epochs and       6950 additinal samples .. (0.038% of epoch done!)[0m
+iter 15000	train disc cost	-0.234529912472	train gen cost	15.06681633	time	3.98575687408
+[92m	Saw real samples of 5 full epochs and      10610 additinal samples .. (0.058% of epoch done!)[0m
+iter 15500	train disc cost	-0.55655413866	train gen cost	4.08253335953	time	3.94375920296
+[92m	Saw real samples of 5 full epochs and        100 additinal samples .. (0.001% of epoch done!)[0m
+iter 16000	train disc cost	-1.01441919804	train gen cost	11.8706798553	time	3.95434999466
+[92m	Saw real samples of 5 full epochs and       3760 additinal samples .. (0.021% of epoch done!)[0m
+iter 16500	train disc cost	-0.905533492565	train gen cost	8.44173622131	time	4.14027285576
+[92m	Saw real samples of 5 full epochs and       7420 additinal samples .. (0.041% of epoch done!)[0m
+iter 17000	train disc cost	-0.738126635551	train gen cost	10.1984176636	time	3.96876192093
+[92m	Saw real samples of 5 full epochs and      11080 additinal samples .. (0.061% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 6) ...
+iter 17500	train disc cost	-0.451577395201	train gen cost	13.30727005	time	3.93945503235
+[92m	Saw real samples of 6 full epochs and      14740 additinal samples .. (0.081% of epoch done!)[0m
+iter 18000	train disc cost	-0.938218414783	train gen cost	7.81516838074	time	3.94995212555
+[92m	Saw real samples of 6 full epochs and      12732 additinal samples .. (0.070% of epoch done!)[0m
+iter 18500	train disc cost	-1.77877271175	train gen cost	8.59302043915	time	3.95200896263
+[92m	Saw real samples of 6 full epochs and      10724 additinal samples .. (0.059% of epoch done!)[0m
+iter 19000	train disc cost	-0.065131932497	train gen cost	6.34568738937	time	3.95459985733
+[92m	Saw real samples of 6 full epochs and       8716 additinal samples .. (0.048% of epoch done!)[0m
+iter 19500	train disc cost	-0.803762316704	train gen cost	5.37319087982	time	3.94944906235
+[92m	Saw real samples of 6 full epochs and       6708 additinal samples .. (0.037% of epoch done!)[0m
+[94m
+END OF EPOCH - SAVING CHECKPOINT
+[0m
+ [*] Saving checkpoint (step 7) ...
+ [*] Saving checkpoint (step 7) ...
+[94m
+SAVING CHECKPOINT[0m
+[94mTraining done!
+[0m

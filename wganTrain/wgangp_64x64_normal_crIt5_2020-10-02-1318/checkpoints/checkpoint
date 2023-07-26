@@ -1,0 +1,8 @@
+model_checkpoint_path: "wgan-gp.model-7"
+all_model_checkpoint_paths: "wgan-gp.model-1"
+all_model_checkpoint_paths: "wgan-gp.model-2"
+all_model_checkpoint_paths: "wgan-gp.model-3"
+all_model_checkpoint_paths: "wgan-gp.model-4"
+all_model_checkpoint_paths: "wgan-gp.model-5"
+all_model_checkpoint_paths: "wgan-gp.model-6"
+all_model_checkpoint_paths: "wgan-gp.model-7"
